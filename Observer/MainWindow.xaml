@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Observer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="271.098" Width="447.11">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Name="BtNotify" Content="Notify" HorizontalAlignment="Left" Margin="24,11,0,0" VerticalAlignment="Top" Width="75" Click="BtNotify_Click" Height="20"/>
+        <CheckBox Name="Chb1" Checked="Chb1_Checked" Unchecked="Chb1_Unchecked" Content="Квадрат" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Height="15" Width="64"/>
+        <CheckBox Name="Chb2" Checked="Chb2_Checked"  Unchecked ="Chb2_Unchecked"  Content="Круг" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Height="15" Width="44"/>
+        <CheckBox Name="Chb3" Checked="Chb3_Checked"  Unchecked="Chb3_Unchecked"  Content="Прямоугольник" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="15" Width="107"/>
+        <Rectangle Name="Rec" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="191,11,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Ellipse Name="Ell" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="307,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle Name="RecRec" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="191,116,0,0" Stroke="Black" VerticalAlignment="Top" Width="216"/>
+        <ComboBox Name="Cb" SelectedIndex="0" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="120" Height="22">
+            <TextBlock>Red</TextBlock>
+            <TextBlock>Black</TextBlock>
+            <TextBlock>Blue</TextBlock>
+        </ComboBox>
+
     </Grid>
 </Window>

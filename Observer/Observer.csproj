@@ -54,6 +54,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ConcreteObserver.cs" />
+    <Compile Include="ConcreteSubject.cs" />
+    <Compile Include="NewObserver.cs" />
+    <Compile Include="Subject.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
