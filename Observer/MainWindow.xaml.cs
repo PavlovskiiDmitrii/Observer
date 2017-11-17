@@ -20,21 +20,16 @@ namespace Observer
     /// </summary>
     public partial class MainWindow : Window
     {
-        ConcreteSubject subject;
-        ConcreteObserver ob1;
-        ConcreteObserver ob2;
-        ConcreteObserver ob3;
-
-
         public MainWindow()
         {
             InitializeComponent();
-            subject = new ConcreteSubject();
-            //subject.Attach(new ConcreteObserver(subject,Rec));
-           // subject.Attach(new ConcreteObserver(subject,Ell));
-           // subject.Attach(new ConcreteObserver(subject,RecRec));
-          //  subject.brush = Brushes.Red;
+           // subject = new ConcreteSubject();
         }
+
+        ConcreteSubject subject = new ConcreteSubject();
+        ConcreteObserver ob1;
+        ConcreteObserver ob2;
+        ConcreteObserver ob3;
 
         private void BtNotify_Click(object sender, RoutedEventArgs e)
         {
@@ -50,7 +45,6 @@ namespace Observer
             {
                 subject.brush = Brushes.Blue;
             }
-
             subject.Notify();
         }
 
